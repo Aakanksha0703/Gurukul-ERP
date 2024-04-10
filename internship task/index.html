@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurukul ERP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-sky-300">
+    <div class="m-10 p-8  bg-white  rounded-md min-w-fit">
+        <!--header-->
+        <header class="flex justify-between">
+            <h1 class="text-2xl font-bold mb-2 text-blue-600 pt-4 w-fit pr-5 pl-8 ">Gurukul ERP</h1>
+        <div>
+            <i class="fa-solid fa-bars text-xl"></i>
+            <input type="text" name="search" placeholder="Search here..." class="min-w-96 pr-60 border-black border-x-2 border-y-2 p-2 rounded-md ml-10 mr-2">
+        </div> 
+            <i class="fa-solid fa-circle-user text-4xl"></i>
+     </header>
+        <!--header end-->
+        <div class="flex">
+            <!--aside-->
+        <aside class="bg-gray-500 text-white max-w-80 pl-2 mr-5">
+            <a href="#" class="block p-3 hover:text-blue-600 text-lg "><i class="fa-brands fa-microsoft"></i>     Dashboard</a>   
+            <a href="#" class="block p-3 hover:text-blue-600 text-lg"><i class="fa-solid fa-circle-plus"></i>      Admissions</a>
+            <a href="#" class="block p-3 hover:text-blue-600 text-lg"><i class="fa-solid fa-users"></i>        Students</a>
+            <a href="payment.html" target="_blank" class="block p-3 hover:text-blue-600 text-lg"><i class="fa-solid fa-money-check-dollar"></i>    Fees & Payments</a>
+            <a href="#" class="block p-3 hover:text-blue-600 text-lg"><i class="fa-solid fa-calendar"></i>     Time Table</a>
+            <a href="#" class="block p-3 hover:text-blue-600 text-lg"><i class="fa-solid fa-file-circle-question"></i>     Quiz</a>
+            <a href="#" class="block p-3 hover:text-blue-600 text-lg"><i class="fa-solid fa-square-poll-horizontal"></i>    Results</a>
+            <a href="#" class="block p-3 hover:text-blue-600 text-lg"><i class="fa-solid fa-house"></i>        Departments</a>
+            <a href="#" class="block p-3 hover:text-blue-600 text-lg"><i class="fa-solid fa-bell"></i>     Notifications</a>
+            <a href="#" class="block p-3 hover:text-blue-600 text-lg"><i class="fa-solid fa-gear"></i>     Settings</a>
+        </aside>
+        <!--aside end-->
+        <!--main-->
+        <div class="flex">
+        <main>
+            <h1 class="text-xl mb-5 text-blue-600"><i class="fa-brands fa-microsoft text-xl"></i> Dashboard</h1>
+<div class="flex justify-between" >
+    <div class="bg-sky-300 pl-16 pr-16 pt-5 pb-5 h-fit  text-center rounded-md">
+        <i class="fa-solid fa-thumbs-up text-2xl"></i>
+        <p>Total Likes</p>
+        <h2 class="text-2xl font-bold">50,120</h2>
+    </div>
+    <div class="bg-purple-300 pl-16 pr-16 pt-5 pb-5 h-fit text-center rounded-md">
+        <i class="fa-solid fa-comments text-2xl"></i>
+        <p>Comments</p>
+        <h2 class="text-2xl font-bold">25,120</h2>  
+    </div>
+    <div class="bg-red-200 pl-16 pr-16 pt-5 pb-5  h-fit text-center rounded-md">
+         <i class="fa-solid fa-share text-2xl"></i>
+         <p>Total Share</p>
+        <h2 class="text-2xl font-bold">10,320</h2>  
+    </div>
+    
+</div>
+
+<!--chart-->
+<div class="flex mt-10">
+    <div class="pr-16 pl-10 ">
+        <h1 class="text-xl font-bold">Collage overview</h1>
+        <canvas id="barChart" class="h-60"></canvas>
+
+    </div>
+    <div>
+        <canvas id="doughnut"></canvas>
+
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="chart1.js"></script>
+<script src="chart2.js"></script>
+<!--chart end-->
+</div>
+<!--marquee list-->
+<div class="mt-8 ml-10 p-5 w-60 rounded-md bg-sky-300">
+    <h1 class="text-xl font-bold p-5">Upcoming events</h1>
+    <marquee class="bg-white m-1">Ambedkar Jayanti</marquee>
+    <marquee class="bg-white m-1">Birthday of Rabindranath</marquee>
+    <marquee class="bg-white m-1">Independence Day</marquee>
+    <marquee class="bg-white m-1">Independence Day</marquee>
+    <marquee class="bg-white m-1">Independence Day</marquee>
+    <marquee class="bg-white m-1">Independence Day</marquee>
+    <marquee class="bg-white m-1">Independence Day</marquee>
+    <marquee class="bg-white m-1">Independence Day</marquee>
+</div>
+<!--marqee list end-->
+        </main>
+        <!--main end-->
+        </div>
+        </div>
+</body>
+</html>
